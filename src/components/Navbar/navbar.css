@@ -1,0 +1,130 @@
+/* General Styles */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(34, 33, 33);
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+  .logo img {
+    width: 220px;
+    height: 180px;
+    margin-top: -32px;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  
+  .nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+  }
+
+  .nav-links ul li a:hover{
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+  }
+  
+  .booking-button button {
+    /*background-color: #4954c5;*/
+    background-color: rgb(55, 106, 55);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .booking-button button:hover{
+    background-color: #0056b3;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .menu-icon .menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fafafa;
+    transition: 0.3s;
+    margin-right: 20px;
+    
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .booking-button {
+      display: none;
+    }
+    .main-navbar{
+       height: 90px;
+       
+    }
+    
+    .logo img{
+      margin-bottom: -29px;
+      margin-left: -38px;
+    }
+
+    .nav-links ul {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      background-color: #333;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .nav-links ul li a{
+        color: rgb(255, 253, 253);
+        display:flex;
+        justify-content: end;
+        padding: 10px;
+    }
+  
+    .nav-links.active ul {
+      display: flex;
+    }
+  
+   
+  
+    .menu-icon {
+      display: flex;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    .logo img {
+      width: 112px;
+      height: 100px;
+      margin-left: 5px;
+    }
+
+    .nav-links ul{
+        gap: 0.1rem;
+    }
+
+    .nav-links ul li a{
+        font-size: 0.8rem;
+    }
+}
+
+  

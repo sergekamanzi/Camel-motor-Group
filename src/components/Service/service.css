@@ -1,0 +1,130 @@
+/* Container for services */
+.main-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .services:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-icons {
+    font-size: 2.5rem;
+    color: #40b99d;
+    margin-bottom: 1rem;
+  }
+  
+  .services h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .services p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .read-more {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 13px;
+  }
+  
+  .read-more:hover {
+    color: #0056b3;
+  }
+  
+  /* Centered and underlined header */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablets and medium screens */
+  @media (max-width: 1024px) {
+    .services {
+      width: 45%;
+    }
+  }
+  
+  /* Small screens */
+  @media (max-width: 768px) {
+    .main-service {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services {
+      width: 80%;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    .main-service{
+      margin-top: -50px;
+    }
+
+    .services {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .service-icons {
+      font-size: 2rem;
+    }
+  
+    .services h3 {
+      font-size: 1.1rem;
+    }
+  
+    .services p {
+      font-size: 0.85rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+  

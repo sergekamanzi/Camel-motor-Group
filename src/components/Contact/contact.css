@@ -1,0 +1,140 @@
+  
+
+  .main-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+   
+  }
+  
+  .contact-container {
+    background: linear-gradient(to bottom, #166350, #cce0ff);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+    height: 546px;
+  }
+
+  .contact-container h3 {
+    font-size: 30px;
+  }
+
+  .contact-form h3 {
+    font-size: 30px;
+    color: rgb(55, 106, 55);
+  }
+  
+  .contact-container h3, .contact-container h5 {
+    margin: 0;
+  }
+  
+  .contact-container p {
+    margin-bottom: 20px;
+    color: rgb(245, 237, 237);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Form section styles */
+  .contact-form {
+    width: 55%;
+  }
+  
+  .contact-form h3 {
+    margin-bottom: 20px;
+  }
+  
+  .names {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .names input {
+    width: 80%;
+  }
+  input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 70%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .send-button {
+    padding: 10px 20px;
+    background-color: rgb(55, 106, 55);
+    color: white;
+    width: 70%;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .send-button:hover{
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .main-contact {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-container, .contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .names {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      text-align: center;
+      height: 450px;
+      margin-top: -45px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+
+    .names input {
+      width: 70%;
+    }
+  }
+  

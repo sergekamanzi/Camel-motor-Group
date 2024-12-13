@@ -1,0 +1,52 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main footer container */
+  .main-footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #383636; 
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Footer content styling */
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    flex-wrap: wrap; /* Makes sure content wraps on smaller screens */
+  }
+  
+  /* Divider styling between sections */
+  .footer-content .divider {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive font size and padding */
+  @media (max-width: 768px) {
+    .footer-content {
+      font-size: 0.9rem;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content {
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  }
+  
+  

@@ -1,0 +1,130 @@
+/* General Styles */
+.simple-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  padding: 3rem;
+  color: #333;
+  height: 430px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* Text Styles */
+.header-text h5 {
+  font-size: 1rem;
+  color: #a49e9e;
+  margin-bottom: 0.5rem;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.start-now button {
+  background-color: rgb(55, 106, 55);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.start-now button:hover {
+  background-color: #0056b3;
+}
+
+/* Slide Dots */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .start-now button {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-text h5 {
+    font-size: 1rem;
+  }
+
+  .simple-hero{
+    height: 355px;
+  }
+
+  .start-now button {
+    padding: 0.6rem 1.6rem;
+    font-size: 0.9rem;
+  }
+
+  .dots .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 1.1rem;
+  }
+  
+  .simple-hero{
+    height: 240px;
+  }
+
+  .header-text h5 {
+    font-size: 0.9rem;
+  }
+
+  .start-now button {
+    padding: 0.5rem 1.4rem;
+    font-size: 0.65rem;
+  }
+
+  .dots .dot {
+    width: 8px;
+    height: 8px;
+  }
+}

@@ -1,0 +1,52 @@
+/* General Styles */
+.main-donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Full-screen height */
+    background-color: #f5f5f5; /* Light background for contrast */
+  }
+  
+  .donate-button {
+    text-align: center;
+  }
+  
+  /* Button Styles */
+  .donate-button button {
+    color: #fff; /* White text */
+    border: none;
+    font-size: 1.2rem; /* Larger, readable font size */
+    /*font-weight: bold;  Bold text for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: rgb(55, 106, 55);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  /* Hover and Active Effects */
+  .donate-button button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .donate-button button:active {
+    transform: translateY(1px); /* Subtle press effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow on press */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .donate-button button {
+      font-size: 1rem; /* Smaller font for tablets */
+      padding: 0.7rem 1.8rem; /* Adjusted padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .donate-button button {
+      font-size: 0.9rem; /* Smaller font for mobile devices */
+      padding: 0.6rem 1.5rem; /* Adjusted padding for mobile */
+    }
+  }
+  
