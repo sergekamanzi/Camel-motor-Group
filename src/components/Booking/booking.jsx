@@ -70,12 +70,10 @@ const Booking = () => {
               <input type="text" placeholder='telephone' required />
             </div>
             <div className='input-group'>
-              <label htmlFor="District">District</label>
-              <select id="District" name="district" required>
-                <option value="Nyarugenge">Nyarugenge</option>
-                <option value="Kicukiro">Kicukiro</option>
-                <option value="Gasabo">Gasabo</option>
-              </select>
+            <div className='input-group'>
+              <label>District</label>
+              <input type="text" placeholder='Akarere' required />
+            </div>
             </div>
             <div className='input-group'>
               <label>Sector</label>
@@ -96,12 +94,13 @@ const Booking = () => {
             <div className='input-group'>
               <label htmlFor="service">Service</label>
               <select id="service" name="serviceType" required>
+                <option value="Septic Tank Emptying">Hitamo serivise</option>
                 <option value="Septic Tank Emptying">Septic Tank Emptying</option>
                 <option value="Sludge Transport">Sludge Transport</option>
               </select>
             </div>
             <div className='input-group'>
-              <label>Volume of waste</label>
+              <label>Volume of waste (m&#179;)</label>
               <input type="text" placeholder='Ingano yumwanda' required />
             </div>
             <div className='input-group'>

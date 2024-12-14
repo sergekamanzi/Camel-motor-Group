@@ -27,28 +27,28 @@ const Contact = () => {
       <div className='contact-form'>
         <h3>Send us a message</h3>
         <div className='names'>
-          <div className='input-group'>
+          <div className='input-groupz'>
             <label>First Name</label>
             <input type="text" placeholder='First Name' />
           </div>
-          <div className='input-group'>
+          <div className='input-groupz'>
             <label>Last Name</label>
             <input type="text" placeholder='Last Name' />
           </div>
         </div>
-        <div className='input-group'>
+        <div className='input-groupz'>
           <label>Email</label>
           <input type="email" placeholder='Email' />
         </div>
-        <div className='input-group'>
+        <div className='input-groupz'>
           <label>Phone</label>
           <input type="text" placeholder='Phone' />
         </div>
-        <div className='input-group'>
+        <div className='input-groupz'>
           <label>Company Name</label>
           <input type="text" placeholder='Company Name' />
         </div>
-        <div className='input-group'>
+        <div className='input-groupz'>
           <label>Message</label>
           <textarea placeholder='Your Message'></textarea>
         </div>
