@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 
 const slides = [
   {
-    image: '/public/hero2.jpg',
+    image: '/hero2.jpg',
     title: 'Sewage treatment works',
     subtitle: 'Treating sewage before it is released into the environment',
     buttonText: 'Booking service'
   },
   {
-    image: '/public/hero3.jpg',
+    image: '/hero3.jpg',
     title: 'Water Purification Systems',
     subtitle: 'Ensuring clean water for communities is our priority',
     buttonText: 'Booking service'
