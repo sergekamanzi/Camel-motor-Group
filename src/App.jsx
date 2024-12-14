@@ -8,8 +8,10 @@ import Blog from './components/Blog/blog';
 import Donate from './components/Donate/donate';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
-import Booking from './components/Booking/booking';  // Import your booking component
+import Booking from './components/Booking/booking';
 import './App.css';
+import { db } from './firebase';  // Import the Firestore database
+
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path="/booking" element={<Booking />} />  {/* Booking route */}
+        <Route path="/booking" element={<Booking db={db} />} />  {/* Pass Firestore db as prop */}
       </Routes>
     </Router>
   );
