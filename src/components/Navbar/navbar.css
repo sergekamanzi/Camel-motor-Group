@@ -14,9 +14,9 @@
 }
   
   .logo img {
-    width: 220px;
-    height: 180px;
-    margin-top: -32px;
+    width: 140px;
+    height: 100px;
+    margin-top: 7px;
   }
   
   .nav-links ul {
@@ -116,6 +116,7 @@
       width: 112px;
       height: 100px;
       margin-left: 5px;
+      margin-top: -15px;
     }
 
     .nav-links ul{
