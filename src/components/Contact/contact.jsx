@@ -3,6 +3,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -14,7 +15,12 @@ const Contact = () => {
         <h5>Chat with us</h5><br/>
         <p>Our friendly team is here to help<br/>e@gmail.com</p>
         <h5>Call us</h5><br/>
-        <p>Call us on 123-456-7890</p>
+        <p className='phone'>
+            click here to call or write <br/>
+            <a href="https://wa.me/250786289187" target="_blank" rel="noopener noreferrer">
+               <FaWhatsapp className='icon whatsapp'/> +250786289187
+            </a>
+          </p>
         <h5>Social media</h5>
         <div className='social-icons'>
           <FiInstagram className='icon instagram'/>
