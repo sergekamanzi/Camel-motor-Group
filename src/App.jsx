@@ -9,9 +9,10 @@ import Donate from './components/Donate/donate';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 import Booking from './components/Booking/booking';
+import Ab from './pages/Ab/a';
+import SERVICE from './pages/SERVICE/s';
 import './App.css';
 import { db } from './firebase';  // Import the Firestore database
-
 
 function App() {
   return (
@@ -31,6 +32,25 @@ function App() {
           </>
         } />
         <Route path="/booking" element={<Booking db={db} />} />  {/* Pass Firestore db as prop */}
+        
+        {/* Route for About (a.jsx) */}
+        <Route path="/mission" element={
+          <>
+            <Navbar />    {/* Include Navbar */}
+            <Ab />        {/* Main content for About page */}
+            <Contact />   {/* Include Contact */}
+            <Footer />    {/* Include Footer */}
+          </>
+        } />
+         {/* Route for Service (a.jsx) */}
+         <Route path="/service" element={
+          <>
+            <Navbar />    {/* Include Navbar */}
+            <SERVICE />   {/* Main content for About page */}
+            <Contact />   {/* Include Contact */}
+            <Footer />    {/* Include Footer */}
+          </>
+        } />
       </Routes>
     </Router>
   );

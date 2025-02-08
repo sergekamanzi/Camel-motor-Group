@@ -11,9 +11,9 @@ const Contact = () => {
       <div className='contact-container'>
         <h3>Get in touch</h3><br/><br/>
         <h5>Visit us</h5><br/>
-        <p>Come say hello at our office<br/>123 main street, kk35st</p>
+        <p>Come say hello at our office<br/>INALAS KN 20 Ave</p>
         <h5>Chat with us</h5><br/>
-        <p>Our friendly team is here to help<br/>e@gmail.com</p>
+        <p>Our friendly team is here to help<br/>info@camelmotorgroup.com</p>
         <h5>Call us</h5><br/>
         <p className='phone'>
             click here to call or write <br/>

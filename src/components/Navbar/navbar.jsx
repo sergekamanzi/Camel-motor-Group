@@ -1,4 +1,5 @@
-import  { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import './navbar.css';
 import logo from '/logo.png';
 
@@ -17,9 +18,9 @@ const Navbar = () => {
 
       <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#about">About us</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/service">Services</Link></li>
+          <li><Link to="/mission">Our Mission</Link></li>  {/* Updated with Link to /about */}
           <li><a href="#technology">Equipment & Technology</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact Us</a></li>
