@@ -18,13 +18,13 @@ const Contact = () => {
         <p className='phone'>
             click here to call or write <br/>
             <a href="https://wa.me/250786289187" target="_blank" rel="noopener noreferrer">
-               <FaWhatsapp className='icon whatsapp'/> +250786289187
+               <FaWhatsapp className='icon whatsapp'/> +250786289187 or +250795752328
             </a>
           </p>
         <h5>Social media</h5>
         <div className='social-icons'>
-          <FiInstagram className='icon instagram'/>
-          <FaXTwitter className='icon twitter' />
+        <a href="https://www.instagram.com/camelmotorgroupltd/" target="_blank"> <FiInstagram className='instagram'/></a>
+        <a href="https://x.com/camelmotorgroup" target="_blank"><FaXTwitter className='twitter' /></a> 
           <FaTiktok className='icon tiktok'/>
           <FaFacebook  className='icon youtube'/>
         </div>

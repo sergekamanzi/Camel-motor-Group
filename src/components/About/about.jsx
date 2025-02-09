@@ -23,8 +23,8 @@ const about = () => {
                 treatment plants or approved disposal sites.
                 </p>
                 <div className='social-icons'>
-                <FiInstagram className='instagram'/>
-                <FaXTwitter className='twitter' />
+               <a href="https://www.instagram.com/camelmotorgroupltd/" target="_blank"> <FiInstagram className='instagram'/></a>
+               <a href="https://x.com/camelmotorgroup" target="_blank"><FaXTwitter className='twitter' /></a> 
                 <FaTiktok  className='tiktok'/>
                 <FaFacebook className='youtube'/>
                 </div>
